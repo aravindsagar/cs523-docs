@@ -6,6 +6,7 @@
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
+\usepackage{subcaption}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -49,6 +50,31 @@ component, formatting, style, styling, insert
 %TODO write background
 \section{Background}
 \input{bg}
+
+\begin{figure*}[t]
+
+	\begin{subfigure}{0.24\textwidth}
+	\includegraphics[width=0.95\linewidth]{screen1.png}
+	\caption{Overview of user's data}
+	\label{fig:screen1}
+	\end{subfigure}
+	\begin{subfigure}{0.24\textwidth}
+	\includegraphics[width=0.95\linewidth]{screen2.png}
+	\caption{Details of a particular device}
+	\label{fig:screen2}
+	\end{subfigure}
+	\begin{subfigure}{0.24\textwidth}
+	\includegraphics[width=0.95\linewidth]{screen3.png}
+	\caption{Navigation drawer}
+	\label{fig:screen3}
+	\end{subfigure}
+	\begin{subfigure}{0.24\textwidth}
+	\includegraphics[width=0.95\linewidth]{screen4.png}
+	\caption{Notifications screen}
+	\label{fig:screen4}
+	\end{subfigure}
+\caption{UI mockup of the user facing application}\label{fig:screens}
+\end{figure*}
 
 \section{Problem and solution}
 \input{prob}
