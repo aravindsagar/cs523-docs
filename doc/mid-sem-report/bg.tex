@@ -3,13 +3,13 @@ TODO
 (Can potentially include the paper exposing security holes in Samsung SmartThings)
 
 \subsection{Security and privacy in IoT (Blockchain paper)}
-Nowadays, smart devices like Android Wearables and smart phones are collecting information in every aspect of device owners and generate vast amount of data. While the sheer size and growing rate of the data present a challenge to store and process them, keeping the data secure is equally challenging and important.
+IoT data security is crucial in protecting user privacy. In the paper ``World of Empowered IoT Devices" \cite{campbell}, a framework is proposed to provide secure data manipulation in a scalable way.
 
-The paper ``World of Empowered IoT Devices" \cite{campbell} proposes a system that aims to address these problems. In this system, user data is stored in volunteer data servers. These data servers let the data owners to name trusted entities who can access the proprietary data. A data requester can only get access to the data if it has the permission given by the data owner(IoT device user). 
+In the data management protocol of this framework, user data is stored in trusted third-party entities, known as “data sources”. IoT users are known as “data owners” to the data their devices collected. Entities who are trying to get access to user data are known as “data requesters”. 
 
-To ensure data transparency, all data transactions are recorded using BlockChains. A Publisher-Subscriber configuration is used to keep track and distribute the BlockChain nodes. After a successful data transaction, the data server broadcasts the transaction and the subscribers update their BlockChain Record.
+The data owner is the only party who can grant data requesters the right, called “capability”, to access its proprietary data. When the data requester needs data access, it contacts the data owner for the capability. After acquiring the capability, the data requester will access data at data source. Throughout the process, the data owner has the control its data.
 
-Using the combination of user-granted data access and BlockChain, the system proposed by ``World of Empowered IoT Devices" provides a secure and scalable way to manage the ever-growing IoT user data.
+To ensure data transparency, all data transactions are recorded using BlockChains. After a successful data transaction, the data server broadcasts the transaction and the publishers update their BlockChain Record. 
 
 \subsection{Intel SGX}
 TODO
