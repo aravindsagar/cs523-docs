@@ -1,1 +1,1 @@
-# cs523-iot-ui
+# documentation of cs523 class project

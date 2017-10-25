@@ -1,14 +1,26 @@
+We use Hashemi et al. \cite{campbell} protocol as a main guideline for IoT sharing mechanism. Meanwhile, our work is not limited to this protocol as we can extend our framework to any data sharing protocol. In addition to four major parties involved in their protocol, we also add cloud service providers in our model. These providers are responsible for running our server-side implementation that enforces user-defined policies on data request approvals/denials. 
+
 \begin{enumerate}
-	\item cellphone Trusted (we can use TrustZone based solution to be orthogonal to our solution)
+\item \textbf {Data Owners} 
 
-	\item data source Trusted
+Our work primarily focuses on households with a small number of IoT devices. These individuals may interact with IoT devices using IoT applications written by IoT device manufacturers or other third-party programmers. Our framework does not trust these applications as they may leak sensitive data and violate Data Owner's privacy. Users grant or deny operations related with IoT data using our Android application. Securing our application against malicious Android applications or Android OS is out of the scope, but solutions that enforce Android application security and OS security \cite{tz} can be applied as orthogonal solutions to our work.
 
-	\item Endorser Trusted
+\item \textbf{Data Source} 
 
-	\item data requesters NOT trusted
+We assume Data Sources are managed by trusted parties such that they honestly follow the data sharing protocol.  
 
-	\item cloud NOT trusted
+\item \textbf {Data Requesters}
 
-	\item we are not responsible for user misassigning policies. instead we aim to minimize it
+We assume data requests from Data Requesters as one of the major privacy threat vectors. Data Requesters query and find data objects using the Messaging service and request those objects to Data Owners using the protocol. Meanwhile, Data Owners may not fully understand the risks associated with approving or denying data requests. Our solution primarily focuses on providing concise and accurate information for each	 data request and guiding Data Owners to make autonomous decisions.
+
+\item \textbf {Endorsers}
+
+In our framework, trusted Endorsers are responsible for validating identity of Data Requesters and authenticity of Requesters' requests.
+
+\item \textbf {Cloud Service Providers}
+
+Untrusted third party Cloud Service Providers host back-end of our framework. Note that IoT device manufacturers usually provide such service for their IoT device customers. We do not trust this computational platform and enforce security and privacy of our solution using Intel's SGX enclaves. Data Owner trusts server-side code run in the enclave, and they can validate integrity of the code using measurements provided with a cryptographic hash. Attacks that target security limitations of the Intel SGX processors are out of scope in our paper. These include Cache timing side-channel attacks and Denial of Service attacks. Meanwhile, we believe orthogonal approaches that mitigate such threats can be applied to our solution.
 
 \end{enumerate}
+
+We primarily focus on two attack vectors. We protect Data Owners against data requests that may violate user privacy using our user-friendly User Interface. We believe this is the most likely threat against ordinary IoT users. Meanwhile, we would also like to provide transparency and resiliency of our framework by securing the back-end with Intel's SGX.
