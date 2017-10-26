@@ -1,13 +1,17 @@
-There exists several challenges to implement our solution for the project.
+There exists several challenges to implement our solution. We would to address these challenges in this section. 
 
 \begin{enumerate}
-\item simulating different parties like DR and DS (potentially simulating IoT applications as well)
+\item \textbf{Simulating Roles}
 
-\item preparing Intel SGX hardware
+Since our work is based on a theoretical model, we need to simulate each entity. During this simulation process, we may run into some implementation problems regarding details that are not explained in the literature. Thus, we need to make assumptions and augment the model in order to proceed our project. Furthermore, we may not have accurate performance benchmarks for our evaluation as we work on a simulated environment for testing our framework. 
 
-\item designing user interface is a hard task
+\item \textbf{Designing User Interface}
 
-\item Challenges related to user research for app interface: The challenges related to conducting a user research for the mobile app is two fold.
+Effective application design is an active area of research. Designing our front-end application would be the most challenging task for our project. We would like to explore Deka et al.'s~\cite{rico} large repository of mobile app design to achieve our goal for the project. Davies et al.~\cite{davies} discusses key challenges and concerns regarding how to design user policies that mediate between user and application. While they do not directly provide a clear-cut solution to the problem, authors provide a list of possible approaches to improve effectiveness of user policies.  
+
+\item \textbf{User Study for App Interface}
+
+The challenges related to conducting a user research for the mobile app is two fold.
 
 First, we are building an interface for which the backend is unfamiliar, and not available yet. This means that users need to know more background information about the interface for which we seek feedback. In particular, most of the IoT systems that exist now are centralized, and provides coarse-grained permissioning. By contrast, the system that we are targeting is distributed, user-centric, and fine grained in terms of third party data access permissions. Users need to know this to provide effective feedback about the interface.
 
