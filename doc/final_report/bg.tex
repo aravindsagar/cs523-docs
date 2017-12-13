@@ -1,0 +1,35 @@
+\subsection{Internet of Things}
+The term Internet of Things (IoT) originated more than 15 years ago, when it was used to describe the work of the Auto-ID Labs at the
+Massachusetts Institute of Technology (MIT) on networked radio-frequency identification (RFID) infrastructures~\cite{atzori}. The definition has since expanded to beyond the scopr of RFID technologies. A lot of modern definitions have been proposed, one of them being ``a global infrastructure for the Information Society, enabling advanced services by interconnecting (physical and virtual) things based on existing and evolving interoperable information and communication technologies''~\cite{itu}.
+
+The applications of IoT are diverse, ranging from smart industries to smart homes. In smart home area, thermostats, security systems, and energy management systems are particularly growing fast. In this paper, we focus on IoT technologies related to individual users, and these mostly fall under the smart home category, though the general principles are applicable in all areas of IoT.
+
+Recent years have seen a rapid growth of smart devices available commercially. Ecosystems like Samsung SmartThings, Google Home and Apple Homekit are competing to become the primary player in personal IoT devices space, and for good reason -  it is estimated that IoT could grow into a market worth \$7.1 trillion by 2020~\cite{idc}.
+
+However, the rapid expansion of IoT market also means that many issues have been overlooked, and still need resolution. Some of the relevant issues are presented in `Related Works'.
+
+\subsection{Privacy-Aware IoT Framework}
+IoT data security is crucial in protecting user privacy. Hashemi et al.~\cite{campbell} has proposed a scalable, privacy-aware IoT framework.
+
+Fig.~\ref{fig:framework_campbell} shows the overall structure of the framework~\cite{campbell}. It is composed of three components: a Data Store System that stores the transaction of data in a distributed way (using blockchain); a Massaging Service through which data owners, data sources and data requesters communicate; and a Data Management Protocol that defines the procedures and policies of data access.
+
+Our work focuses on the Data Management Protocol because the users do not directly interact with with the Messaging Service and the Data Store System. In the data management protocol, user data is stored in trusted entities, known as ``data sources''. IoT users are labelled as the ``data owners''. Entities who are trying to get access to user data are known as ``data requesters''. 
+
+The data owner is the only party who can grant data requesters the right, called ``capability'', to access their proprietary data. A data source needs to always allow the owner to access their data, and this is done by having the data source send an access ticket to the data owner whenever new data objects are created. The access ticket contains the data ID, the public key of the data owner, metadata and how the data can be accessed. To prove its identity, this message is encrypted with the private key of the data source.
+
+When a data requester needs access to user data, it has to request a `capability' to do so from the data owner through the Messaging Service. The data requester needs to send the Request ID, the its own public key and other conditions like access duration to the user. Before the information reaches the owner, the data requester can increase the credibility of its request by finding third-party endorsers to endorse this request. The endorsers would sign the request in series with their private keys, and include their public key at the end.
+
+If the data owner decides to grant the access to its data, it would send a package to the requester. Part of the package which contains the data ID, the data access path, the capability and the public key of the data source is signed with the private key of the data owner. In addition, the request ID and a special version of the owner’s public key is also included in the package. The entire package is then encrypted with the public key of the data requester.
+
+After the requester acquires a capability from a data owner, it uses this capability to fetch the corresponding data from the data source. Before the data requester sends the capability to data source, the capability is encrypted with the private key of the data requester, and the requester’s public key is appended. Finally, the entire message is encrypted with the public key of the data source.
+
+After sharing data with a data requester, the data source informs the data owner about the data access by sending a message containing the public key of the data source, the original data access ticket it sent to the data owner earlier, and part of the capability that was signed by the data owner’s private key. This entire message is encrypted with the public key of the data owner.
+
+Finally, to ensure data transparency, all data transactions are recorded using Blockchains. After a successful data transaction, the data server broadcasts the transaction and the publishers update their Blockchain ledger accordingly. 
+
+\subsection{Related Works}
+Davies et al. points out that privacy concerns could be a major factor preventing wide-spread adoption of IoT devices~\cite{davies}. Over-centralization of IoT systems is identified as a critical obstacle to eliminating concern over privacy. They propose a privacy mediator which sits in between IoT devices/data and outside world, and validates permissions according to the access control policies before any data is sent out. This model includes a trusted `cloudlet', which could be a local hub or a trusted server at the edge of the cloud. They also emphasize some important characteristics that a privacy-aware IoT system should have, like exposing summarized data, user anonymity, control over inferred sensors, and ease of use. However, the model's limitation is that data storage has to happen in the sensor or the cloudlet - this could be limiting when the number of sensors increase. The model also does not discuss any framework for how to identify legitimate third party applications, and how to make sure that the request originates from the same application as it is claiming to be from.
+
+Data mining and clustering of IoT related articles expose major problem areas in IoT~\cite{zhang}. App over-privilege, environment mistrust, LAN mistrust and weak authentication are identified as some of the problem areas that needs work. They also conclude that permissioning needs to be more fine-grained, and recommend better standards and widely-applicable systems.
+
+Security analysis of existing IoT systems show that serious vulnerabilities exist currently~\cite{smartthings}. An analysis of Samsung Smartthings ecosystem in particular, shows that apps in the ecosystem are overpriveleged, and vulnerabilities like event spoofing can lead to privacy violation and even more serious consequences like loss of property. This goes even further in showing that a centralized proprietary system is probably not the right way to deal with IoT.

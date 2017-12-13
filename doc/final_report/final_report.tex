@@ -1,0 +1,118 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{subcaption}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{User-Friendly IoT Data Management Framework\\
+{\footnotesize CS523 Mid-Semester Report}
+}
+
+\author{\IEEEauthorblockN{Hyun Bin Lee, Aravind Sagar, Zicheng Li}
+
+\IEEEauthorblockA{ %\textit{Department of Computer Science} \\
+\textit{University of Illinois at Urbana-Champaign}\\
+Urbana, United States \\
+\{lee559,asagar3,zli135\}@illinois.edu}
+%\and
+%\IEEEauthorblockN{Aravind Sagar}
+%\IEEEauthorblockA{\textit{Department of Computer Science} \\
+%\textit{University of Illinois Urbana-Champaign}\\
+%Urbana, United States \\
+%asagar3@illinois.edu}
+%\and
+%\IEEEauthorblockN{Zicheng Li}
+%\IEEEauthorblockA{\textit{Department of Electrical and Computer Engineering} \\
+%\textit{University of Illinois Urbana-Champaign}\\
+%Urbana, United States \\
+%zli135@illinois.edu}
+}
+
+\maketitle
+
+%TODO write abstract
+% \begin{abstract}
+% \input{abs}
+% \end{abstract}
+
+%\begin{IEEEkeywords}
+%component, formatting, style, styling, insert
+%\end{IEEEkeywords}
+
+\section{Introduction}
+\input{intro}
+
+\begin{figure}[t]
+	\includegraphics[width=0.95\linewidth]{campbell_framework.png}
+	\caption{Structure of the a privacy-aware IoT framework}
+	\label{fig:framework_campbell}
+\end{figure}
+
+\section{Background}
+\input{bg}
+
+\begin{figure}[t]
+	\includegraphics[width=0.95\linewidth]{mid_sem_graphic.png}
+	\caption{Structure of the prototype framework}
+	\label{fig:framework}
+\end{figure}
+
+\section{Problem and solution}
+\input{prob}
+
+\section{Threat Model}
+\input{tm}
+
+\begin{figure*}[t]
+	\begin{subfigure}{0.24\textwidth}
+	\includegraphics[width=0.95\linewidth]{screen1.png}
+	\caption{Overview of user's data}
+	\label{fig:screen1}
+	\end{subfigure}
+	\begin{subfigure}{0.24\textwidth}
+	\includegraphics[width=0.95\linewidth]{screen2.png}
+	\caption{Details of a particular device}
+	\label{fig:screen2}
+	\end{subfigure}
+	\begin{subfigure}{0.24\textwidth}
+	\includegraphics[width=0.95\linewidth]{screen3.png}
+	\caption{Navigation drawer}
+	\label{fig:screen3}
+	\end{subfigure}
+	\begin{subfigure}{0.24\textwidth}
+	\includegraphics[width=0.95\linewidth]{screen4.png}
+	\caption{Notifications screen}
+	\label{fig:screen4}
+	\end{subfigure}
+\caption{UI of the user facing application}\label{fig:screens}
+\end{figure*}
+
+\section{Implementation}
+\subsection{Android app}
+\input{impl_app}
+\subsection{Server}
+\input{impl_server}
+\subsection{Data source and requester simulation}
+\input{impl_simulation}
+
+\section{User study}
+\input{user_study}
+
+\section{Challenges and future work}
+\input{challenges}
+
+\section{Conclusion}
+\input{conclusion}
+
+\begin{thebibliography}{00}
+\input{ref}
+\end{thebibliography}
+
+\end{document}

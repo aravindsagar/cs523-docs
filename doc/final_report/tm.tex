@@ -1,0 +1,27 @@
+We implement our solution based on Hashemi et al.'s~\cite{campbell} work for sharing IoT data objects. We particularly focus on their Data Management protocol to model communication between data requesters and data owners. Meanwhile, our work is not limited to this protocol as we can extend our framework to any equivalent multi-party cryptographic communication protocol. In addition to four major parties involved in their protocol, we also add one additional party named Cloud Service Providers in our model. These providers are responsible for running our server-side implementation that enforces decisions made by users to regarding approvals/denials of data object requests. 
+
+\begin{enumerate}
+\item \textbf {Data Owners} 
+
+Our work primarily focuses on households with a small number of IoT devices. These individuals may interact with IoT devices using IoT applications written by IoT device manufacturers or other third-party programmers. Our framework does not trust these applications as they may leak sensitive data and violate Data Owner's privacy. Users grant or deny operations related with IoT data objects using our Android front-end  application. Securing our application against Android malwares or compromised Android OS is out of the scope of our paper, but solutions that enforce Android application security and OS security~\cite{tz} can be applied as orthogonal solutions to our work. 
+
+\item \textbf{Data Source} 
+
+Although a Data Owner has a possession of data created by his Data Sources, the Data Owner may or may not manage Data Sources. We assume Data Sources are managed by trusted parties such that they honestly follow the data sharing protocol. On the other hand, enforcement of protocol on Data Sources is one of our future works. 
+
+\item \textbf {Data Requesters}
+
+We assume data requests coming from Data Requesters to be one of the major privacy threat vectors. Data Requesters query and find data objects using the Messaging service and request those data objects to Data Owners by following the Data Management protocol. Since we assumed Data sources to be honest, Data Requesters can only obtain data objects by following the protocol. Nonetheless, Data Owners may not fully understand the risks associated with approving or denying data requests. As Hashimi et al. has mentioned, the system they have proposed is user-centric such that user has full control of access control of data. In other words, Data Owners are solely responsible for granting access to all resources. This can be a very burdensome task such that it may not be scalable as we envision IoT devices to be more ubiquitous in the future. Thus, our solution primarily focuses on providing concise and accurate information for each data request and guiding Data Owners to make autonomous decisions.
+
+\item \textbf {Endorsers}
+
+In our framework, trusted Endorsers are responsible for validating identity of Data Requesters and authenticity of Requesters' requests. Supplementary Information provided by Endorsers regarding the data requests may help user to make correct decisions.
+
+\item \textbf {Cloud Service Providers}
+
+Trusted third party Cloud Service Providers host back-end server applications for each Data Owner such that each front-end Android application has a corresponding back-end application. Each server application is isolated from another as each runs on a separate virtual machine. 
+
+For our future work, we would like to have a stronger threat model and assume Cloud Service Providers to be untrusted as well. In such case, we could enforce security and privacy of our solution using Intel's SGX~\cite{enclave} enclaves. Data Owner trusts server-side code run in the enclave, and they can validate integrity of the code using measurements provided with a cryptographic hash. While, our solution provides all security guarantees that are enforced by the enclaves, attacks that target security limitations of the Intel SGX processors are out of scope in our paper. These include Cache timing side-channel attacks~\cite{leaky} and Denial of Service attacks. Meanwhile, we believe orthogonal approaches~\cite{mengjia,raccoon} that mitigate such threats can be applied to our solution. 
+\end{enumerate}
+
+With guidances of our user-friendly user interface, our work protects Data Owners against data requests that may violate user privacy. We believe this is the most likely threat against ordinary IoT users as we envision complexity of IoT system to increase in the future. Our ultimate goal is to provide concise yet accurate information to users such that they make intended and autonomous decisions.
