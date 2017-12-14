@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  12 DEC 2017 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 DEC 2017 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,19 +442,32 @@ e
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 38.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 36.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
- (./intro.tex)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+ (./abs.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+) (./intro.tex)
 <campbell_framework.png, id=1, 402.64714pt x 357.90857pt>
 File: campbell_framework.png Graphic file (type png)
 
 <use campbell_framework.png>
-Package pdftex.def Info: campbell_framework.png used on input line 53.
+Package pdftex.def Info: campbell_framework.png used on input line 47.
 (pdftex.def)             Requested size: 239.39923pt x 212.79712pt.
  (./bg.tex [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.
 map}
@@ -476,11 +489,11 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
  [2])
-<mid_sem_graphic.png, id=15, 603.25375pt x 375.4025pt>
+<mid_sem_graphic.png, id=17, 603.25375pt x 375.4025pt>
 File: mid_sem_graphic.png Graphic file (type png)
 
 <use mid_sem_graphic.png>
-Package pdftex.def Info: mid_sem_graphic.png used on input line 62.
+Package pdftex.def Info: mid_sem_graphic.png used on input line 56.
 (pdftex.def)             Requested size: 239.39923pt x 148.9726pt.
  (./prob.tex
 Underfull \hbox (badness 1466) in paragraph at lines 15--16
@@ -491,41 +504,49 @@ Underfull \hbox (badness 1466) in paragraph at lines 15--16
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-<screen1.jpg, id=20, 1084.05pt x 1927.2pt>
+<screen1.jpg, id=22, 1084.05pt x 1927.2pt>
 File: screen1.jpg Graphic file (type jpg)
  <use screen1.jpg>
-Package pdftex.def Info: screen1.jpg used on input line 75.
+Package pdftex.def Info: screen1.jpg used on input line 69.
 (pdftex.def)             Requested size: 117.65031pt x 209.14021pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 78.
 
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 78.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-<screen2.jpg, id=21, 1084.05pt x 1927.2pt>
+<screen2.jpg, id=23, 1084.05pt x 1927.2pt>
 File: screen2.jpg Graphic file (type jpg)
  <use screen2.jpg>
-Package pdftex.def Info: screen2.jpg used on input line 80.
+Package pdftex.def Info: screen2.jpg used on input line 74.
 (pdftex.def)             Requested size: 117.65031pt x 209.14021pt.
 
-<screen3.jpg, id=22, 1084.05pt x 1927.2pt>
+<screen3.jpg, id=24, 1084.05pt x 1927.2pt>
 File: screen3.jpg Graphic file (type jpg)
  <use screen3.jpg>
-Package pdftex.def Info: screen3.jpg used on input line 85.
+Package pdftex.def Info: screen3.jpg used on input line 79.
 (pdftex.def)             Requested size: 117.65031pt x 209.14021pt.
 
-<screen4.jpg, id=23, 1084.05pt x 1927.2pt>
+<screen4.jpg, id=25, 1084.05pt x 1927.2pt>
 File: screen4.jpg Graphic file (type jpg)
  <use screen4.jpg>
-Package pdftex.def Info: screen4.jpg used on input line 90.
+Package pdftex.def Info: screen4.jpg used on input line 84.
 (pdftex.def)             Requested size: 117.65031pt x 209.14021pt.
- (./impl_app)
-(./impl_server) (./impl_simulation) (./user_study) (./challenges.tex [4])
-(./conclusion) (./ref.tex
+
+Overfull \hbox (71.94427pt too wide) in paragraph at lines 95--96
+[]\OT1/ptm/m/n/10 Server and sim-u-la-tor: https://github.com/ww785612/REST[]AP
+I[]encryption 
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 98--99
+[]\OT1/ptm/m/n/10 The repos-i-tory used for col-lab-o-rat-ing on the re-ports:
+ []
+
+<app_server.png, id=26, 1008.76875pt x 652.4375pt>
+File: app_server.png Graphic file (type png)
+ <use app_server.png>
+Package pdftex.def Info: app_server.png used on input line 103.
+(pdftex.def)             Requested size: 239.39923pt x 154.8261pt.
+
+(./impl_app.tex [4] [5 <./screen1.jpg> <./screen2.jpg> <./screen3.jpg> <./scree
+n4.jpg> <./app_server.png>]) (./impl_server.tex) [6] (./impl_simulation.tex)
+(./user_study.tex) (./challenges.tex) (./conclusion.tex) (./ref.tex
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 []\OT1/ptm/m/n/8 (2015, Jun) ``In-ter-net of Things Mar-ket to Reach \TS1/ptm/m
 /n/8 $\OT1/ptm/m/n/8 1.7
@@ -569,7 +590,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--6
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 []\OT1/ptm/m/n/8 (2012, Jun) ``Overview of In-ter-net of Things.'' ITU-
  []
@@ -580,6 +601,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
  []
 
 )
+Underfull \hbox (badness 3312) in paragraph at lines 15--125
+[]\OT1/ptm/m/n/8 ``Smartphone OS Mar-ket Share, 2017 Q1''. idc.com. Avail-able:
+
+ []
+
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -591,25 +617,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5 <./screen1.jpg> <./screen2.jpg> <./screen3.jpg> <./screen4.jpg>]
-(./final_report.aux) ) 
+[8
+
+] (./final_report.aux) ) 
 Here is how much of TeX's memory you used:
- 5144 strings out of 492995
- 80472 string characters out of 6132704
- 146603 words of memory out of 5000000
- 8595 multiletter control sequences out of 15000+600000
- 35316 words of font info for 72 fonts, out of 8000000 for 9000
+ 5179 strings out of 492995
+ 80905 string characters out of 6132704
+ 146615 words of memory out of 5000000
+ 8616 multiletter control sequences out of 15000+600000
+ 42247 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,40p,1139b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on final_report.pdf (5 pages, 988417 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on final_report.pdf (8 pages, 1274647 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 46 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

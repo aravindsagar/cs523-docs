@@ -89,6 +89,21 @@ Urbana, United States \\
 \end{figure*}
 
 \section{Implementation}
+The implementation consists of 3 main parts: an Android app, a server manages communications with 3rd parties, and a simulator for Data sources and Data requesters according to the model in~\cite{campbell}. The implementations have been open-sourced under Apache 2.0 licence, and can be found in github:
+\begin{itemize}
+	\item App: https://github.com/aravindsagar/cs523-iot-ui-app
+	\item Server and simulator: https://github.com/ww785612/REST\_API\_encryption
+\end{itemize}
+
+The repository used for collaborating on the reports: https://github.com/aravindsagar/cs523-docs
+
+Each component is described in detail below.
+
+\begin{figure}[t]
+	\includegraphics[width=0.95\linewidth]{app_server.png}
+	\caption{App-server communication}
+	\label{fig:app_server_comm}
+\end{figure}
 \subsection{Android app}
 \input{impl_app}
 \subsection{Server}
