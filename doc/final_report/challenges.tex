@@ -1,9 +1,12 @@
 There exists several challenges to implement our solution. We would like to address these challenges in this section. 
 
 \begin{enumerate}
-\item \textbf{Simulating Roles}
+\item \textbf{Simulation-based Implementation}
 
-Since our work is based on a theoretical model, we had to simulate each entity for simulation and implementation. During this simulation process, we run into some implementation problems regarding details that are not explained in the literature. For instance, the paper does not specify how to incorporate multiple layers of protocols. Message 2 of Data Management Protocol is transmitted via Messaging Service, but this is also a part of Data Management Protocol. We went around this problem by allowing Data Requester to directly send requests via POST requests, but we would like to extend our framework such that it covers multiple components of the protocol. Furthermore, we were not able to prepare accurate performance benchmarks for our evaluation as we work on a simulated environment for testing our framework. Since our primary concern of the project was on effectiveness of user-interface, we did not allocate our resources on performance evaluation for this project.
+Since our work is based on a theoretical model, we had to simulate each entity for simulation and implementation. During this simulation process, we ran into some implementation problems regarding details that are not explained in the literature. For instance, the paper does not specify how to incorporate multiple layers of protocols. Message 2 of Data Management Protocol is transmitted via Messaging Service, but this is also a part of Data Management Protocol. We went around this problem by allowing Data Requester to directly send requests via POST requests, but we would like to extend our framework such that it covers multiple components of the protocol. Furthermore, we were not able to prepare accurate performance benchmarks for our evaluation as we work on a simulated environment for testing our framework. Since our primary concern of the project was on effectiveness of user-interface, we did not allocate our resources on performance evaluation for this project.
+
+While Hashimi et al.'s core contribution on IoT data management framework was incorporating blockchain technology to the framework, we did not have an opportunity to implement blockchain onto our solution as our work only involved Data Management Protocol.
+
 
 \item \textbf{Designing User Interface}
 
@@ -13,7 +16,7 @@ Effective application design is an active area of research. Designing our front-
 
 The challenges related to conducting a user research for the mobile app are two fold.
 
-First, we are building an interface for which the backend is unfamiliar, and not available yet. This means that users need to know more background information about the interface for which we seek feedback. In particular, most of the IoT systems that exist now are centralized, and provides coarse-grained permissioning. By contrast, the system that we are targeting is distributed, user-centric, and fine grained in terms of third party data access permissions. Users need to know this to provide effective feedback about the interface.
+First, we built an interface for which the backend is unfamiliar, and not available to interact. Users lacked some background information about the interface for which we seek feedback on. In particular, most of the IoT systems that exist now are centralized, and provides coarse-grained permissioning. By contrast, the system that we are targeting is distributed, user-centric, and fine grained in terms of third party data access permissions. While we attempted our best effort to bridge this gap, we felt that users need to know more about this fact to provide effective feedback about the interface.
 
-Second, IoT is still in its infancy, and it's hard to find enthusiast users of IoT devices. We overcome this by treating smartphone sensors as basic IoT devices and building a story for user interaction with the application in terms of sensor data available from smartphones.
+Second, IoT is still in its infancy, and it's hard to find enthusiast users of IoT devices. We overcame this by treating smartphone sensors as basic IoT devices in addition to commonly adopted smarthome IoT devices. We built a story for user interaction with the application in terms of sensor data available from smartphones and smarthome IoT devices for our user servey.
 \end{enumerate}
