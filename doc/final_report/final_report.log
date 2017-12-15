@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 DEC 2017 17:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  14 DEC 2017 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -528,9 +528,8 @@ File: screen4.jpg Graphic file (type jpg)
 Package pdftex.def Info: screen4.jpg used on input line 84.
 (pdftex.def)             Requested size: 117.65031pt x 209.14021pt.
 
-Overfull \hbox (71.94427pt too wide) in paragraph at lines 95--96
-[]\OT1/ptm/m/n/10 Server and sim-u-la-tor: https://github.com/ww785612/REST[]AP
-I[]encryption 
+Underfull \hbox (badness 6157) in paragraph at lines 95--96
+[]\OT1/ptm/m/n/10 Server and sim-u-la-tor: https://github.com/ww785612/
  []
 
 
@@ -637,7 +636,7 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
 ocal/texlive/2017/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on final_report.pdf (8 pages, 1274647 bytes).
+Output written on final_report.pdf (8 pages, 1274677 bytes).
 PDF statistics:
  75 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
