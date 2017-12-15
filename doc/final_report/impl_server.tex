@@ -1,11 +1,11 @@
 We set up our server on Amazon Web Services EC2. We run a micro-instance with Ubuntu 16.04 to emulate a VM environment provided by a third-party cloud service provider. Our server-side code is written in Python Flask and is supported by Apache2 for HTTP server configuration and MySQL for implementation of the database backend. we used PyCrypto library for encryption/decryption tasks during the Data Management Protocol.
 
-When our Android application communicates with the server, the app must provide credentials (username and password combination) via POST request. This process is processed via HTTPS connection such that app user's credentials are protected against attacks like MITM attacks. On the other hand when Data Sources and Data Requesters interact with our server, they would not require authentication as their messages are protected by cryptographic primitives set up by Hashimi et al. The server is consisted of following interfaces.
+When our Android application communicates with the server, the app must provide credentials (username and password combination) via POST request. This process is processed via HTTPS connection such that app user's credentials are protected against attacks like MITM attacks. On the other hand when Data Sources and Data Requesters interact with our server, they would not require authentication as their messages are protected by cryptographic primitives set up by Hashemi et al. The server is consisted of following interfaces.
 
 \begin{enumerate}
     \item \textbf{/pk}
 
-    Our Android application retrieves Data Owner's public key from the server via this interface. We enforce authentication process to ensure anonymity of Data Owner. Note that Data Owner is allowed to have multiple set of public/private key pairs such that he uses different key for different purposes. This interface provides the default public key (labeled as $K_O$ in Hashimi et al.'s work) to the application.
+    Our Android application retrieves Data Owner's public key from the server via this interface. We enforce authentication process to ensure anonymity of Data Owner. Note that Data Owner is allowed to have multiple set of public/private key pairs such that he uses different key for different purposes. This interface provides the default public key (labeled as $K_O$ in Hashemi et al.'s work) to the application.
 
     \item \textbf{/notify}
 
@@ -17,7 +17,7 @@ When our Android application communicates with the server, the app must provide 
 
     \item \textbf{/dmp}
 
-    Data Sources and Data Requesters interact with our server via this interface. When message arrives with a POST request, our server first parses the message to label message type for the Data Management Protocol. Note that Data Owner can receive message 1 or 5 from Data Source and message 2 from Data Requester. Accordign to Hashimi et al., The message 2 is transferred via Publisher-Messenger Protocol for the Messaging Service layer. Unfortunately, implementation of Messaging Service is out of scope for this project, so we decided to emulate this service by letting Data Requester directly making requests via HTTP POST request. Incorporating our server with Messaging Service layer is a future work for the project.
+    Data Sources and Data Requesters interact with our server via this interface. When message arrives with a POST request, our server first parses the message to label message type for the Data Management Protocol. Note that Data Owner can receive message 1 or 5 from Data Source and message 2 from Data Requester. Accordign to Hashemi et al., The message 2 is transferred via Publisher-Messenger Protocol for the Messaging Service layer. Unfortunately, implementation of Messaging Service is out of scope for this project, so we decided to emulate this service by letting Data Requester directly making requests via HTTP POST request. Incorporating our server with Messaging Service layer is a future work for the project.
 
     Depending on the type of message, respective cryptographic operations are performed and metadata are parsed from the message. The metadata is written in JSON format, and the server parses the JSON string into SQL query so that a new data object or a new data request is stored into our backend MySQL database.
 \end{enumerate}
