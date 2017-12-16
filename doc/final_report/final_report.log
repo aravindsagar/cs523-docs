@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 DEC 2017 18:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  15 DEC 2017 19:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,41 +530,44 @@ Underfull \hbox (badness 1490) in paragraph at lines 98--99
 []\OT1/ptm/m/n/10 The repos-i-tory used for col-lab-o-rat-ing on the re-ports:
  []
 
-<app_server.png, id=26, 970.62625pt x 583.17876pt>
-File: app_server.png Graphic file (type png)
- <use app_server.png>
-Package pdftex.def Info: app_server.png used on input line 103.
-(pdftex.def)             Requested size: 239.39923pt x 143.83664pt.
+<message_protocol.png, id=26, 397.485pt x 403.07732pt>
+File: message_protocol.png Graphic file (type png)
 
-(./impl_app.tex [4]
+<use message_protocol.png>
+Package pdftex.def Info: message_protocol.png used on input line 103.
+(pdftex.def)             Requested size: 239.39923pt x 242.77081pt.
+ (./impl_app.tex [4]
 Underfull \vbox (badness 1281) has occurred while \output is active []
 
- [5 <./screen1.jpg> <./screen2.jpg> <./screen3.jpg> <./screen4.jpg> <./app_serv
-er.png>])
-(./impl_server.tex
-Underfull \vbox (badness 4543) has occurred while \output is active []
+ [5 <./screen1.jpg> <./screen2.jpg> <./screen3.jpg> <./screen4.jpg> <./message_
+protocol.png>]) (./impl_server.tex [6]) <app_server.png, id=40, 970.62625pt x 5
+83.17876pt>
+File: app_server.png Graphic file (type png)
 
- [6])
-(./impl_simulation.tex) <user_study.png, id=40, 647.41875pt x 500.87125pt>
+<use app_server.png>
+Package pdftex.def Info: app_server.png used on input line 113.
+(pdftex.def)             Requested size: 239.39923pt x 143.83664pt.
+ (./impl_simulation.tex)
+<user_study.png, id=41, 647.41875pt x 500.87125pt>
 File: user_study.png Graphic file (type png)
-
-<use user_study.png>
-Package pdftex.def Info: user_study.png used on input line 115.
+ <use user_study.png>
+Package pdftex.def Info: user_study.png used on input line 120.
 (pdftex.def)             Requested size: 239.39923pt x 185.21245pt.
- (./user_study.tex) (./challenges.tex [7 <./user_study.png>]) (./conclusion.tex
-) (./ref.tex
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+(./user_study.tex [7 <./app_server.png> <./user_study.png>]) (./challenges.tex)
+(./conclusion.tex) [8] (./ref.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 []\OT1/ptm/m/n/8 (2015, Jun) ``In-ter-net of Things Mar-ket to Reach \TS1/ptm/m
 /n/8 $\OT1/ptm/m/n/8 1.7
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 \OT1/ptm/m/n/8 Tril-lion by 2020''. The Wall Street Jour-nal. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--2
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
 \OT1/ptm/m/n/8 https://blogs.wsj.com/cio/2015/06/02/internet-of-things-market-t
 o-
  []
@@ -613,17 +616,17 @@ Underfull \hbox (badness 3312) in paragraph at lines 15--16
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 16--130
+Underfull \hbox (badness 10000) in paragraph at lines 16--135
 []\OT1/ptm/m/n/8 ``Amazon me-chan-i-cal turk - Busi-ness feed-back''.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--130
+Underfull \hbox (badness 10000) in paragraph at lines 16--135
 \OT1/ptm/m/n/8 Ama-zon me-chan-i-cal turk - Re-quester. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--130
+Underfull \hbox (badness 10000) in paragraph at lines 16--135
 \OT1/ptm/m/n/8 https://requester.mturk.com/tour/business[]feedback (Ac-cessed D
 ec
  []
@@ -639,28 +642,30 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8] (./final_report.aux) ) 
+[9
+
+] (./final_report.aux) ) 
 Here is how much of TeX's memory you used:
- 5163 strings out of 492995
- 80787 string characters out of 6132704
- 147627 words of memory out of 5000000
- 8608 multiletter control sequences out of 15000+600000
+ 5169 strings out of 492995
+ 80924 string characters out of 6132704
+ 147635 words of memory out of 5000000
+ 8613 multiletter control sequences out of 15000+600000
  37519 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,40p,1352b,391s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/b
-ase/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr
-/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/te
-xlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017
-/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on final_report.pdf (8 pages, 1208478 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.p
+fb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texl
+ive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/t
+exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on final_report.pdf (9 pages, 1320724 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
